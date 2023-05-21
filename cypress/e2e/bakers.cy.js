@@ -1,4 +1,4 @@
-describe('paas', () => {
+describe('Tests automatisés', () => {
   it('successful registration', () => {
     cy.visit('https://preprod.backmarket.fr/register')
     cy.get('input[id="firstName"]').type('Mikhail')
@@ -7,7 +7,6 @@ describe('paas', () => {
     cy.get('input[id="signup-password"]').type('Ll123456')
     cy.get('[data-qa="signup-submit-button"] > .MkLAMntR > ._2GvJDBxS').click()
   })
-
   it('failed registration', () => {
     cy.visit('https://preprod.backmarket.fr/register')    
     cy.get('input[id="firstName"]').type('Mikhail')
